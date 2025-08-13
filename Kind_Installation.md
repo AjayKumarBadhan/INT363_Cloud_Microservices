@@ -76,11 +76,16 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 ### For Windows:
 ```powershell
-# Using Chocolatey
+# Using Chocolatey (recommended)
 choco install kubernetes-cli
 
-# Or using curl (in PowerShell)
-curl -LO "https://dl.k8s.io/release/v1.28.0/bin/windows/amd64/kubectl.exe"
+# Or using PowerShell's Invoke-WebRequest
+Invoke-WebRequest -Uri "https://dl.k8s.io/release/v1.28.0/bin/windows/amd64/kubectl.exe" -OutFile "kubectl.exe"
+# Then move to a directory in your PATH
+Move-Item .\kubectl.exe C:\Windows\System32\kubectl.exe
+
+# Or using winget (Windows 10 1709+)
+winget install -e --id Kubernetes.kubectl
 ```
 
 ### Verify Installation:
@@ -123,12 +128,16 @@ sudo mv ./kind /usr/local/bin/kind
 
 ### For Windows:
 ```powershell
-# Using Chocolatey
+# Using Chocolatey (recommended)
 choco install kind
 
-# Or download manually
-curl -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.20.0/kind-windows-amd64
-Move-Item .\kind-windows-amd64.exe c:\windows\kind.exe
+# Or using PowerShell's Invoke-WebRequest
+Invoke-WebRequest -Uri "https://kind.sigs.k8s.io/dl/v0.20.0/kind-windows-amd64.exe" -OutFile "kind.exe"
+# Then move to a directory in your PATH
+Move-Item .\kind.exe C:\Windows\System32\kind.exe
+
+# Or using winget (Windows 10 1709+)
+winget install -e --id Kubernetes.kind
 ```
 
 ### Verify Installation:
