@@ -1,13 +1,32 @@
 # Complete Guide: Microservice Experiments with Docker and Flask
 
 ## Table of Contents
-1. [Lab Experiment 2: Hello World Microservice](#lab-experiment-2)
-2. [Lab Experiment 3: Login Page Microservice](#lab-experiment-3)
-3. [Lab Experiment 4: Login Microservice on AWS](#lab-experiment-4)
+1. [Lab Experiment 2: Hello World Microservice](#lab-experiment-2-hello-world-microservice)
+2. [Lab Experiment 3: Login Page Microservice](#lab-experiment-3-login-page-microservice)
+3. [Lab Experiment 4: Login Microservice on AWS](#lab-experiment-4-login-microservice-on-aws)
 
 ---
 
 ## Lab Experiment 2: Hello World Microservice
+
+### Project Structure Blueprint
+
+```
+flask-hello-microservice/
+│
+├── app.py                    # Main Flask application file
+├── requirements.txt          # Python dependencies list
+└── Dockerfile               # Docker image build instructions
+```
+
+**Structure Explanation:**
+- **app.py**: Contains the Flask application logic and routes
+- **requirements.txt**: Lists all Python packages needed (Flask)
+- **Dockerfile**: Instructions for Docker to build the container image
+
+**File Count**: 3 files
+**Directories**: 0 subdirectories
+**Purpose**: Minimal microservice setup for serving a simple message
 
 ### Objective
 Create a simple microservice application using Docker and Python Flask that serves a "Hello, World!" message. This experiment introduces the fundamental concepts of containerization and microservice architecture.
