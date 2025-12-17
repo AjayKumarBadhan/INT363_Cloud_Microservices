@@ -4,12 +4,12 @@ A comprehensive tutorial series for learning microservices architecture and Dock
 
 ## Table of Contents
 
-- [Week 1: Microservices Communication](#week-1-microservices-communication)
+- [Week 1-2: Microservices Communication](#week-1-microservices-communication)
 - [Week 3: Docker Compose Multi-Container Application](#week-3-docker-compose-multi-container-application)
 
 ---
 
-## Week 1: Microservices Communication
+## Week 1-2: Microservices Communication
 
 ### Prerequisites to Install
 
