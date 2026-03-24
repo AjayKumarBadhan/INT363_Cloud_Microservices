@@ -379,6 +379,13 @@ Open your browser and navigate to the URL provided in Step 4. You should see the
 | `kubectl rollout undo deployment <name>` | Rollback previous version |
 | `kubectl delete pod <pod-name>` | Delete pod |
 | `kubectl delete deployment <name>` | Delete deployment |
+| `kubectl get nodes -o wide` | Get Control Plane Nodes |
+| `kubectl get pods -n kube-system` | Get Control Plane Components (API Server, Scheduler, Controller Manager) |
+| `kubectl describe pod <pod-name> -n kube-system` | Get Detailed Info of Control Plane Components |
+| `kubectl get componentstatuses` | Get Component Status (Quick Health Check) |
+| `kubectl cluster-info` | Get Cluster Info (Control Plane Endpoint) |
+| `kubectl get all -n kube-system` | Get All Resources in Control Plane Namespace |
+| `kubectl get pods -n kube-system` | Get the components of Control Plane Namespace |
 
 ---
 
